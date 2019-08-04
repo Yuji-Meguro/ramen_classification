@@ -56,7 +56,7 @@ def get_MNIST_data():
     # sort out train_data from test_data
     (train_x, test_x , one_hots_train, one_hots_test) \
         = train_test_split(
-        X, y, test_size=0.1, random_state=0
+        X, y, test_size=0.1, random_state=5
     )
 
     train_x = train_x[:, :, :, np.newaxis]
